@@ -1,17 +1,29 @@
-# mini_katalog_app
+# Mini Katalog Uygulaması
 
-A new Flutter project.
+Bu proje, Flutter ile mobil uygulama geliştirme eğitimi kapsamında geliştirilmiş, temel bileşenleri ve state mantığını anlamayı hedefleyen bir **Mini Katalog Uygulamasıdır**. Eğitim standartlarına sadık kalınarak, harici hiçbir üçüncü parti paket kullanılmadan tamamen `material.dart` kütüphanesiyle inşa edilmiştir.
 
-## Getting Started
+## Kısa Açıklama
+Uygulama, modern e-ticaret ve katalog arayüzlerinin temel yapı taşlarını simüle etmektedir. Proje kapsamında aşağıdaki teknik kazanımlar ve özellikler uygulanmıştır:
+- **Modüler Proje Klasörlemesi:** Kodlar `models`, `screens` ve `widgets` mimarisine uygun olarak ayrıştırılmıştır.
+- **JSON Veri Modeli Yapısı:** Mock veriler (DummyJSON yapısı baz alınarak) `Product.fromJson` factory metodu ile Dart nesnelerine dönüştürülmüştür.
+- **Gelişmiş Arayüz Bileşenleri:** Ana ekranda dinamik ürün listeleme için `GridView.builder`, sepet ekranında ise `ListView.builder` kullanılmıştır.
+- **Navigasyon ve Veri Taşıma:** Ekranlar arası geçişler `Navigator.push` ile sağlanmış, seçilen ürünün detayları `Route Arguments` mantığıyla detay ekranına aktarılmıştır.
+- **State Yönetimi Simülasyonu:** Ürünlerin sepete eklenmesi, sepet listesinden çıkarılması ve sepetin güncellenmesi işlemleri Stateful Widget yapısı ve `setState` ile dinamik olarak kontrol edilmektedir.
 
-This project is a starting point for a Flutter application.
+## Kullanılan Flutter Sürümü
+- **Flutter SDK:** 3.44.0 veya üzeri
+- **Paketler:** Sadece `package:flutter/material.dart` (Ekstra paket kullanılmamıştır).
 
-A few resources to get you started if this is your first Flutter project:
+## Çalıştırma Adımları
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Projeyi kendi yerel ortamınızda ayağa kaldırmak için aşağıdaki adımları sırasıyla uygulayabilirsiniz:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Projeyi Klonlayın:**
+   ```bash
+   git clone [https://github.com/cankoroot/mini_katalog_app.git](https://github.com/cankoroot/mini_katalog_app.git)
+2. **Bağımlılıkları çekin**
+   flutter pub get
+3. **Uygulamayı Çalıştırın**
+   flutter run
+
+   
